@@ -1,4 +1,4 @@
-package com.learn.dagger2demo;
+package com.learn.dagger2demo.demo;
 
 import javax.inject.Inject;
 
