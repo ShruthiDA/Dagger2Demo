@@ -1,5 +1,6 @@
 package com.learn.dagger2demo.example.component;
 
+import com.learn.dagger2demo.example.MainActivity;
 import com.learn.dagger2demo.example.module.MainActivityModule;
 import com.learn.dagger2demo.example.RandomUserAdapter;
 import com.learn.dagger2demo.example.RandomUsersApi;
@@ -14,4 +15,8 @@ public interface MainActivityComponent {
     RandomUserAdapter getRandomUserAdapter();
 
     RandomUsersApi getRandomUserService();
+
+
+    void injectMainActivity(MainActivity mainActivity);
+
 }

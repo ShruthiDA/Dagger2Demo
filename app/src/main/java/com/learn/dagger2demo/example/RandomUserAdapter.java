@@ -6,6 +6,6 @@ import com.squareup.picasso.Picasso;
 
 public class RandomUserAdapter {
 
-    public RandomUserAdapter(Context context , Picasso picasso) {
+    public RandomUserAdapter(MainActivity context , Picasso picasso) {
     }
 }

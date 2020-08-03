@@ -7,8 +7,6 @@ import android.os.Bundle;
 import com.learn.dagger2demo.R;
 import com.learn.dagger2demo.example.component.DaggerMainActivityComponent;
 import com.learn.dagger2demo.example.component.MainActivityComponent;
-import com.learn.dagger2demo.example.component.RandomUserComponent;
-import com.learn.dagger2demo.example.module.ContextModule;
 import com.learn.dagger2demo.example.module.MainActivityModule;
 import com.squareup.picasso.Picasso;
 
@@ -35,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 .mainActivityModule(new MainActivityModule(this))
                 .randomUserComponent(RandomUserApplication.get(this).getRandomUserApplicationComponent())
                 .build();
+
+        mainActivityComponent.injectMainActivity(this);
+
+        // We can inject these
         randomUsersApi = mainActivityComponent.getRandomUserService();
         mAdapter = mainActivityComponent.getRandomUserAdapter();
 
