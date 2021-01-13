@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390680975554",
+    "project_id": "test-bitrise-6828c",
+    "storage_bucket": "test-bitrise-6828c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390680975554:android:898775d44204e419d4035b",
+        "android_client_info": {
+          "package_name": "com.learn.dagger2demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390680975554-1ggnce26p4rv9t5usj7gss54vmavlckt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEhSvv-RuCKFWCk5w-TefdcHcZXn6jRrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390680975554-1ggnce26p4rv9t5usj7gss54vmavlckt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
