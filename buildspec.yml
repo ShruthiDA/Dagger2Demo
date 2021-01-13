@@ -4,8 +4,13 @@ phases:
   build:
     commands:
       - chmod +x gradlew
+      - echo "Building debug app"
       - ./gradlew assembleDebug
+      - echo "Building release app"
+      - ./gradlew assembleRelease
+      - echo "Completed building debug and release apks"
 artifacts:
   files:
     - app/build/outputs/apk/debug/app-debug.apk
+    - app/build/outputs/apk/release/app-release-unsigned.apk
 
