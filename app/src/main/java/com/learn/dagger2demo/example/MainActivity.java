@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.firebase.FirebaseApp;
 import com.learn.dagger2demo.R;
 import com.learn.dagger2demo.example.component.DaggerMainActivityComponent;
 import com.learn.dagger2demo.example.component.MainActivityComponent;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        FirebaseApp.initializeApp(getApplicationContext());
        /* RandomUserComponent daggerRandomUserComponent = DaggerRandomUserComponent.builder()
                 .contextModule(new ContextModule(this))
                 .build();
